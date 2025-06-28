@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: lightgreen;
+}
+header {
+    background-color: green;
+}
+header h1 {
+    margin: 0;
+    font-size: 8em;
+    text-align: center;
+}
+header h2 {
+    margin: 0;
+    font-size: 4em;
+    text-align: right;
+    margin-right: 20%;
+}
