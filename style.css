@@ -38,6 +38,7 @@ h1{
     float: left;
     clear: left;
     display: block;
+    padding: 10px;
 }
 
 #cartas{
