@@ -3,10 +3,18 @@
     color: white;
 }
 
+.paprika-regular {
+  font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body{
     background-image: url(imgs/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 #Logo{
@@ -15,18 +23,23 @@ body{
 }
 
 h1{
-    align-items: center;
+    font-size: large;
+    color: rgb(156, 33, 156);
+    text-shadow: 2px 2px black;
+    font-family: 'Paprika';
+    display: flex;
+    justify-content: center;
 }
 
-#carta-ametal{
-    height: 205px;
-    width: 155px;
+.carta{
+    width: 150px;
     transition: all .5s;
+    margin-bottom: 30px;
     float: left;
-    padding: 10px;
-    margin: 10px;
+    clear: left;
+    display: block;
 }
 
-#cartaExem{
-    margin-top: 60px;
+#cartas{
+    
 }
