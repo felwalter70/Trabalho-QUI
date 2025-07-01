@@ -31,6 +31,10 @@ h1{
     justify-content: center;
 }
 
+ul{
+    font-size: 25px;
+}
+
 .carta{
     width: 150px;
     transition: all .5s;
@@ -41,6 +45,11 @@ h1{
     padding: 10px;
 }
 
-.cartas{
-    clear:right
+h3{
+    display: grid;
+    justify-content: center;
+}
+
+.special{
+    clear: both;
 }
