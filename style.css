@@ -35,6 +35,7 @@ h1{
     width: 150px;
     transition: all .5s;
     margin-bottom: 30px;
+    margin-right: 20px
     float: left;
     clear: left;
     display: block;
