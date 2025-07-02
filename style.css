@@ -15,6 +15,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #Logo{
@@ -23,8 +24,17 @@ body{
 }
 
 h1{
-    font-size: large;
+    font-size: x-large;
     color: rgb(156, 33, 156);
+    text-shadow: 2px 2px black;
+    font-family: 'Paprika';
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(245, 7, 245);
     text-shadow: 2px 2px black;
     font-family: 'Paprika';
     display: flex;
@@ -33,15 +43,27 @@ h1{
 
 ul{
     font-size: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.carta-texto {
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    max-width: 500px;
 }
 
 .carta{
     width: 150px;
-    transition: all .5s;
-    margin-bottom: 30px;
-    float: left;
-    clear: left;
-    display: block;
+    margin-bottom: 0;
     padding: 10px;
 }
 
@@ -52,4 +74,31 @@ h3{
 
 .special{
     clear: both;
+}
+
+.ligacao{
+    transform: rotate(90deg);
+    margin-left: -24px;
+    margin-right: -20px;
+    height: 150px;
+    width: 200px;
+}
+
+b{
+    color: rgb(156, 33, 156);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+em{
+    display: block;
+    font-size: medium;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+#cartas {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
