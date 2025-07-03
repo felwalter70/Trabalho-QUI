@@ -97,8 +97,26 @@ em{
     text-align: center;
 }
 
-#cartas {
+.cartas {
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+#carta-gas {
+    width: 250px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+table{
+    background-color: rgb(41, 7, 41);
+    border: 2px solid rgb(156, 33, 156);
+}
+
+th{
+    color: rgb(245, 7, 245);
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(250, 255, 255);
 }

@@ -14,18 +14,21 @@
 <body>
     <img src="imgs/chemistry-removebg-preview.png" alt="logo do jogo" id="Logo">
     <h1>o jogo de cartas</h1>
-    <h2>Sobre o jogo:</h2>
+    <h2>Sobre o Jogo:</h2>
     <p>Chemistry é um jogo de cartas em turnos sobre química, cujo o objetivo é fazer mais pontos a partir de moléculas, o intuito do jogo é estimular os jogadores a aprenderem química de uma maneira simples e divertida.</p>
+    
+    <h3>Jogadores:</h3>
+    <p><em>2</em></p>
+    
     <h3>Baralho:</h3>
     <ul>
         <li>X cartas de elementos;</li>
         <li>X cartas de ligação;</li>
         <li>X cartas de multiplicação;</li>
-        <li>X cartas de gases nobres.</li>
+        <li>7 cartas de gases nobres.</li>
     </ul>
     <br>
-    <h2>-Regras Do Jogo-</h2>
-    <div id="cartas">
+    <div class="cartas">
         <h3>Cartas</h3>
         <p>Chemistry é baseado em turnos, com X no total, o objetivo é juntar pontos a partir das cartas jogáveis:</p>
         <div class="carta-container">
@@ -38,10 +41,47 @@
         </div>
         <div class="carta-container">
             <img src="imgs/multiplicadores/multiplicador-x2-azul.png" alt="imagem de um multiplicador de elementos" class="carta">
-            <p class="carta-texto"><em>Cartas de Multiplicação:</em><br>Cartas de Multiplicação São usadas para moléculas muito grandes, que precisam de muitos átomos para ser completa, porém, cartas de multiplicação não somam pontos, apenas ajudam o jogador a conseguir átomos suficientes para a molécula.<br></p>
+            <p class="carta-texto"><em>Cartas de Multiplicação:</em><br>Cartas de Multiplicação São usadas para moléculas muito grandes, que precisam de muitos átomos para ser completa, porém,<b> cartas de multiplicação não somam pontos</b>, apenas ajudam o jogador a conseguir átomos suficientes para a molécula.<br></p>
         </div>
     </div>
+    <br>
+
     <h3 class="special">Cartas Especiais</h3>
+    <p>No jogo, nos temos 7 cartas especiais ao total, sendo todas elas identificadas como gases nobres, <b>uma carta de cada gás</b>, todas são únicas e possuem habilidades únicas no jogo, essas habilidades podem ser tanto passivas quanto ativas.</p>
+    <div class="cartas">
+        <img src="imgs/cartas/carta-gas-nobre.png" alt="imagem da carta de gás nobre" id="carta-gas">
+    </div>
+    <p>no exemplo, as cartas são roxas e possuem sua habilidade escrito na parte inferior, normalmente as cartas são passivas, mas em casos a parte, as cartas dirão suas condições</p>
+    <br>
+    <br>
+    <h2>-Regras do jogo-</h2>
+    <h3>Início do Jogo:</h3>
+    <p>Antes do jogo de fato começar, os jogadores devem escolher de um modo de sua preferência para escolher quem iniciará o jogo, esse deverá ser o primeiro a escolher sua Carta Especial, e logo depois o outro jogador.</p>
+    <p>logo apos isso, as cartas de ligação deveram ser separadas do restante(todas possuem o verso escrito "ligações"), e logo depois, os montes devem ser embaralhados um por um, e assim, cada jogador deverá encher sua mão com o máximo de cartas <b> [5]</b>,  pega 3 cartas padrões e 2 cartas de ligações, exceto no caso do jogador possuir o argônio, dai então o jogo começa.</p>
+    <br>
+    <h3>Turnos:</h3>
+    <p>O jogo é baseado em turnos, onde em cada turno o jogador terá três energias, no qual são gastas com interações do jogo, veja a tabela:</p>
+    <table>
+        <tr>
+            <th>Interação</th>
+            <th>Custo</th>
+        </tr>
+        <tr>
+            <td>Comprar uma carta de elemento</td>
+            <td>1 energia</td>
+        </tr>
+        <tr>
+            <td>Comprar uma carta de ligação</td>
+            <td>2 energias</td>
+        <tr>
+            <td>Descartar uma carta</td>
+            <td>1 energia</td>
+        </tr>
+        <tr>
+            <td>Usar Carta Especial</td>
+            <td>*variável</td>
+        </tr>
+    </table>  
 
 </body>
 </html>
