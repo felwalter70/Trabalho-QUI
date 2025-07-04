@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imgs/chemistry-removebg-preview.png">
+    <link rel="icon" href="imgs/chemistry-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
@@ -15,44 +15,48 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#regras">Regras</a></li>
-                <li><a href="#cartas">Cartas</a></li>
-                <li><a href="#cartas-especiais">Cartas Especiais</a></li>
+                <a href="#regrashl">Regras</a>
+                <a href="#cartashl">Cartas</a>
+                <a href="#cartas-especiaishl">Cartas Especiais</a>
             </ul>
         </nav>
     </header>
-    <img src="imgs/chemistry-removebg-preview.png" alt="logo do jogo" id="Logo">
+    <img src="imgs/chemistry-logo.png" alt="logo do jogo" id="Logo">
     <h1>O Jogo de Cartas</h1>
-    <h2>Sobre o Jogo:</h2>
+    <h2 id="sobre">Sobre o Jogo:</h2>
     <p>Chemistry é um jogo de cartas em turnos sobre química, cujo o objetivo é fazer mais pontos a partir de moléculas, o intuito do jogo é estimular os jogadores a aprenderem química de uma maneira simples e divertida.</p>
     
     <h3>Jogadores:</h3>
     <p><em>2</em></p>
     
-    <h3>Baralho:</h3>
-    <ul>
-        <li>X cartas de elementos;</li>
-        <li>X cartas de ligação;</li>
-        <li>X cartas de multiplicação;</li>
-        <li>7 cartas de gases nobres.</li>
-    </ul>
+    <h3>O baralho possui 133 cartas, sendo:</h3>
+    <div id="listadecartas">
+        <ul>
+            <li>X cartas de elementos;</li>
+            <li>X cartas de ligação;</li>
+            <li>X cartas de multiplicação;</li>
+            <li id="cartashl">7 cartas de gases nobres.</li>
+        </ul>
+    </div>
     <br>
     <div class="cartas" id="cartas">
         <h3>Cartas</h3>
-        <p>Chemistry é baseado em turnos, com X no total, o objetivo é juntar pontos a partir das cartas jogáveis:</p>
-        <div class="carta-container">
+        <p id="explain">Chemistry é baseado em turnos, com X no total, o objetivo é juntar pontos a partir das cartas jogáveis:</p>
+        <div class="carta-container" id="cElemento">
             <img src="imgs/cartas/carta-metal.png" alt="imagem da carta do elemento ferro, com 2 pontos de valência" class="carta">
-            <p class="carta-texto"><em>Cartas de Elemento:</em><br> As cartas de elemento são a base do jogo, sua camada de valência são os pontos do jogo, são esses pontos que decidem o ganhador, aquele que tiver mais pontos após os X turnos. As cartas de elemento são separadas em <b>metais e ametais</b><br></p>
+            <p class="carta-texto"><em>Cartas de Elemento:</em><br> As cartas de elemento são a base do jogo, sua camada de valência são os pontos do jogo, são esses pontos que decidem o ganhador, aquele que tiver mais pontos após os X turnos. As cartas de elemento são separadas em <b>metais e ametais.</b><br></p>
         </div>
-        <div class="carta-container">
-            <img src="imgs/ligacoes/ligacao-covalente.png" alt="imagem de uma ligação covalente" class="carta ligacao">
+        <div class="carta-container" id="cLigacao">
+            <img src="imgs/ligacoes/ligacao-covalente-90deg.png" alt="imagem de uma ligação covalente" class="carta">
             <p class="carta-texto"><em>Cartas de Ligação:</em><br>Cartas de ligação servem para fazer moléculas, sendo três os tipos de ligação, covalente, iônica e metálica, valendo respectivamente 1, 2 e 3 pontos a mais para a molécula, ou seja, <b>pontos dos elementos + pontos da ligação</b>, cada molécula deve ser feita com a ligação correta e devem ser usadas a quantidade certa de ligações na molécula, sendo necessário apenas para átomos diferentes no jogo.<br></p>
         </div>
-        <div class="carta-container">
+        <div class="carta-container" id="cMultiplicador">
             <img src="imgs/multiplicadores/multiplicador-x2-azul.png" alt="imagem de um multiplicador de elementos" class="carta">
-            <p class="carta-texto"><em>Cartas de Multiplicação:</em><br>Cartas de Multiplicação São usadas para moléculas muito grandes, que precisam de muitos átomos para ser completa, porém,<b> cartas de multiplicação não somam pontos</b>, apenas ajudam o jogador a conseguir átomos suficientes para a molécula. As cartas de multiplicação estão disponiveis em <b>2x, 3x e 4x</b><br></p>
+            <p class="carta-texto"><em>Cartas de Multiplicação:</em><br>Cartas de Multiplicação São usadas para moléculas muito grandes, que precisam de muitos átomos para ser completa, porém,<b> cartas de multiplicação não somam pontos</b>, apenas ajudam o jogador a conseguir átomos suficientes para a molécula. As cartas de multiplicação estão disponiveis em <b>2x, 3x e 4x.</b><br></p>
         </div>
     </div>
+    <br id="cartas-especiaishl">
+    <br>
     <br>
 
     <h3 class="special" id="cartas-especiais">Cartas Especiais</h3>
@@ -61,6 +65,8 @@
         <img src="imgs/cartas/carta-gas-nobre.png" alt="imagem da carta de gás nobre" id="carta-gas">
     </div>
     <p>no exemplo, as cartas são roxas e possuem sua habilidade escrito na parte inferior, normalmente as cartas são passivas, mas em casos a parte, as cartas dirão suas condições</p>
+    <br id="regrashl">
+    <br>
     <br>
     <br>
     <h2 id="regras">-Regras do jogo-</h2>
@@ -108,8 +114,8 @@
     <h3>Jogando:</h3>
     <p>Quando o jogo começar, os jogadores jogarão na ordem da seleção das cartas, fazendo alguma(s) das interações descritas acima, assim que o turno do primeiro jogador acabar, o próximo joga, lembre-se de criar uma estratégia usada nos tipos das cartas usadas e das sua carta especial.</p>
     <p>Apenas as <b>Moléculas</b> com 2 ou mais elementos contarão pontos, cartas jogadas avulsas e na mão dos jogadores não somarão pontos no final.</p>
-    <p>Ao final do jogo, vence aquele cuja soma dos pontos for a maior.</p>
-    <p>Cartas avulsas no final do jogo <b>diminuirão seus pontos em 1</b> por cada</p>
+    <p>Cartas avulsas no final do jogo <b>diminuirão seus pontos em 1</b> por cada carta em mão.</p>
+    <p>Ao final do jogo, <b>vence</b> aquele cuja soma dos pontos for a <b>maior.</b></p>
 
 </body>
 </html>
